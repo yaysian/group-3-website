@@ -145,3 +145,11 @@ color: #d5d5d5;
     padding: .7rem;
   }
 }
+#logo{
+    filter:brightness(100%);
+    transition: ease-in-out filter .15s;
+}
+#logo:hover{
+    filter:brightness(0%);
+    transition: ease-in-out filter .15s;
+}

@@ -2,9 +2,15 @@
   max-width: 960px;
 }
 
-/*
- * Custom translucent site header
- */
+
+/* ABOUT CSS*/
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
 
 .site-header {
   background-color:rgb(148, 4, 4);
@@ -19,11 +25,23 @@
   color: black;
   text-decoration: none;
 }
+.about{
+    background-color: rgb(0, 39, 104);
+}
+.lead{
+    color: white;
+}
 
+.lead2{
+    color: black;
+    font-style: italic;
+}
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
-
+.lead{
+    font-style: italic;
+}
 .product-device {
   position: absolute;
   right: 10%;
@@ -156,29 +174,41 @@ video{
 .float-right{
     position:absolute;
 }
-#header, #background {
+#header{
     position: absolute;
     z-index: -201;
     width: 1920px;
     height: 750px;
-    top: 50px;
+    top: 45px;
     left: 0px;
     overflow: hidden;
     margin-top: 0px;
     margin-left: 0x;
+    width: 100%;
     max-width: initial;
-}
-.main {
-    position: relative;
-    z-index: 1;
 }
 .video {
     vertical-align: middle;
     text-align: center;
+    width: 1920px;
     height: 750px;
     z-index: 1;
     color: white;
-    background-color: rgba(0, 0, 0, .5)
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+@media (max-width: 1919px) {
+    #header {
+        display: none;
+    }
+    .video {
+        background: url('../pics/headerthumb.png');
+        background-size: cover;
+    }
+}
+.main {
+    position: relative;
+    z-index: 1;
 }
 .vert-center-text {
     position: absolute;
@@ -186,4 +216,7 @@ video{
     left: 0;
     text-align: center;
     width: 100%;
+}
+.footerlogo {
+    filter:brightness(0%);
 }
